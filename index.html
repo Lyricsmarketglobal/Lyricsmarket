@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover original lyrics and connect with independent songwriters on LyricMarket.">
+  <meta name="theme-color" content="#101329">
+  <title>LyricMarket — Your words. Their next hit.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="LyricMarket home">
+      <span class="brand-mark">L<span>✦</span></span>
+      <span>Lyric<span class="brand-light">Market</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#browse">Explore lyrics</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#submit">Submit lyrics</a>
+    </nav>
+    <a class="header-cta" href="#submit">List your lyrics <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pulse"></span> THE MARKETPLACE FOR ORIGINAL WORDS</p>
+        <h1>Your words.<br><span>Their next hit.</span></h1>
+        <p class="hero-copy">Discover original lyrics, find your next song idea, and connect directly with independent writers around the world.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#browse">Explore lyrics <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="#submit">I'm a songwriter</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars"><span>✍</span><span>♫</span><span>♪</span></div>
+          <p><strong>Made for writers and artists</strong><br><small>Original work. Clear terms. Direct contact.</small></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="vinyl"><div class="vinyl-ring"></div><div class="vinyl-label">LM<span>✦</span></div></div>
+        <div class="floating-note note-a">♪</div><div class="floating-note note-b">♫</div>
+        <div class="lyric-chip"><span class="chip-dot"></span> WORDS THAT MOVE YOU</div>
+      </div>
+      <div class="hero-bottom"><span>WRITE IT</span><span class="line"></span><span>FIND IT</span><span class="line"></span><span>MAKE IT MUSIC</span></div>
+    </section>
+
+    <section class="browse-section section-wrap" id="browse">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LYRIC LIBRARY</p><h2>Find your next <span>inspiration.</span></h2></div>
+        <p class="section-note">Browse the sample listings below. Sample entries are demonstrations, not real offers.</p>
+      </div>
+      <div class="filters">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search titles, moods, genres..." aria-label="Search lyrics"></label>
+        <select id="genreFilter" aria-label="Filter by genre">
+          <option value="all">All genres</option>
+          <option>Afrobeats</option><option>Pop</option><option>Rap</option><option>R&B</option><option>Indie</option><option>Gospel</option><option>Country</option><option>Dancehall</option><option>Rock</option>
+        </select>
+        <select id="moodFilter" aria-label="Filter by mood">
+          <option value="all">All moods</option><option>Love</option><option>Heartbreak</option><option>Confidence</option><option>Hope</option><option>Party</option>
+        </select>
+      </div>
+      <div class="listing-grid" id="listingGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No listings match your search. Try another title, genre, or mood.</p>
+      <div class="demo-notice"><span>ⓘ</span><p><strong>Demo content:</strong> The lyric cards are fictional examples to show how the site works. Replace them with original work submitted with permission before public launch.</p></div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-wrap">
+        <div class="section-heading centered"><div><p class="eyebrow">SIMPLE BY DESIGN</p><h2>From first line to <span>next release.</span></h2></div></div>
+        <div class="steps">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon">✍</div><h3>Writers submit</h3><p>Send original lyrics with a title, genre, mood, sample, and the rights you are offering.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon">⌕</div><h3>Artists discover</h3><p>Artists browse the library and contact the writer to discuss terms and fit.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon">♫</div><h3>Agree directly</h3><p>Both sides agree in writing on price, permitted use, credits, and any exclusivity before payment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="submit-section section-wrap" id="submit">
+      <div class="submit-copy">
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h2>Got lyrics?<br><span>Let them be heard.</span></h2>
+        <p>Send your original work for review. In this first version, submissions are not uploaded to a server: your browser creates a text file for you to save and send to the site owner.</p>
+        <div class="submission-points"><p>✓ You keep your original copy</p><p>✓ No payment is taken on this website</p><p>✓ Listings require manual approval</p></div>
+      </div>
+      <form class="submit-form" id="submissionForm">
+        <div class="form-top"><span class="form-icon">✦</span><div><h3>Submit your lyrics</h3><p>Prepare a submission file for review</p></div></div>
+        <label>Your display name<input name="writer" required maxlength="80" placeholder="Artist or writer name"></label>
+        <label>Contact email<input name="email" required type="email" maxlength="120" placeholder="you@example.com"></label>
+        <div class="form-row">
+          <label>Song title<input name="title" required maxlength="120" placeholder="Title of your song"></label>
+          <label>Genre<select name="genre" required><option value="">Choose genre</option><option>Afrobeats</option><option>Pop</option><option>Rap</option><option>R&B</option><option>Indie</option><option>Gospel</option><option>Country</option><option>Dancehall</option><option>Rock</option><option>Other</option></select></label>
+        </div>
+        <div class="form-row">
+          <label>Mood<select name="mood" required><option value="">Choose mood</option><option>Love</option><option>Heartbreak</option><option>Confidence</option><option>Hope</option><option>Party</option><option>Other</option></select></label>
+          <label>Asking price (optional)<input name="price" maxlength="40" placeholder="e.g. $25 or negotiable"></label>
+        </div>
+        <label>Short preview<textarea name="preview" required rows="3" maxlength="700" placeholder="Share a short excerpt you are comfortable showing publicly..."></textarea></label>
+        <label>Rights offered<select name="rights" required><option value="">Choose an option</option><option>Non-exclusive licence (discussion)</option><option>Exclusive licence (discussion)</option><option>Rights transfer (requires written agreement)</option><option>Not sure yet — need guidance</option></select></label>
+        <label class="checkbox-label"><input type="checkbox" name="original" required><span>I created this work or have permission to submit it, and I understand submission does not guarantee publication or a sale.</span></label>
+        <button class="button button-primary submit-button" type="submit">Create submission file <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+        <p class="form-footnote">This form does not send anything automatically. It creates a .txt file on your device. You must save it and send it to the site owner for review.</p>
+      </form>
+    </section>
+
+    <section class="trust-section">
+      <div class="section-wrap trust-inner"><div><p class="eyebrow">BUILT ON TRUST</p><h2>Protect the words.<br><span>Respect the writer.</span></h2></div><div class="trust-items"><p><span>01</span><strong>Only submit work you own or are authorised to share.</strong></p><p><span>02</span><strong>Agree on price, credit, usage and exclusivity in writing.</strong></p><p><span>03</span><strong>Never assume a listing or message proves ownership.</strong></p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">L<span>✦</span></span><span>Lyric<span class="brand-light">Market</span></span></a>
+    <p>Your words. Their next hit.</p>
+    <div class="footer-links"><a href="#browse">Explore</a><a href="#submit">Submit lyrics</a><a href="mailto:REPLACE-WITH-YOUR-EMAIL@example.com?subject=LyricMarket%20question">Contact</a></div>
+    <small>© <span id="year"></span> LyricMarket. Working prototype — replace demo content and contact details before launch.</small>
+  </footer>
+
+  <dialog id="listingDialog" class="listing-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close details">×</button>
+    <p class="eyebrow" id="dialogGenre"></p><h2 id="dialogTitle"></h2><p class="dialog-meta" id="dialogMeta"></p>
+    <div class="dialog-lyrics" id="dialogLyrics"></div>
+    <p class="dialog-price" id="dialogPrice"></p>
+    <p class="dialog-warning">Demo listing only. Replace with a verified, approved listing before launch.</p>
+    <a class="button button-primary" href="mailto:REPLACE-WITH-YOUR-EMAIL@example.com?subject=LyricMarket%20listing%20enquiry" id="dialogContact">Ask about this listing <span aria-hidden="true">↗</span></a>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
