@@ -1,33 +1,4 @@
-const CONTACT_EMAIL = "ayomidefaruq079@gmail.com"; // Replace before launch.
-const SUPABASE_URL = "https://baopkvxpeulkenbzgwyo.supabase.co";
-const SUPABASE_KEY = "sb_publishable_MXQsjL9fjXPobEdhFsl0FQ_DyOISV_X";
-let listings = [
-  {id:1,title:"Moonlight on My Side",writer:"Demo Writer 01",genre:"Afrobeats",mood:"Love",price:"Example: $20",art:"art-1",symbol:"☾",excerpt:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you",full:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you"},
-  {id:2,title:"Paper Hearts",writer:"Demo Writer 02",genre:"Pop",mood:"Heartbreak",price:"Example: negotiable",art:"art-2",symbol:"♡",excerpt:"We made forever out of paper and rain\nWatched every promise turn soft in the frame\nI kept the letters, you kept the truth\nFunny how goodbye still sounds like you",full:"We made forever out of paper and rain\nWatched every promise turn soft in the frame\nI kept the letters, you kept the truth\nFunny how goodbye still sounds like you"},
-  {id:3,title:"No Small Dreams",writer:"Demo Writer 03",genre:"Rap",mood:"Confidence",price:"Example: $35",art:"art-3",symbol:"↗",excerpt:"Came with a plan and a pocket of hope\nBuilt me a ladder from every closed door\nIf they draw a line, I make it a road\nI know what I'm worth, I know what I'm owed",full:"Came with a plan and a pocket of hope\nBuilt me a ladder from every closed door\nIf they draw a line, I make it a road\nI know what I'm worth, I know what I'm owed"},
-  {id:4,title:"Golden Hour Prayer",writer:"Demo Writer 04",genre:"Gospel",mood:"Hope",price:"Example: $15",art:"art-4",symbol:"✧",excerpt:"Light through the window, peace in my chest\nEven in the waiting, I'm learning to rest\nOne more morning, one more chance\nGrace has a way of teaching feet to dance",full:"Light through the window, peace in my chest\nEven in the waiting, I'm learning to rest\nOne more morning, one more chance\nGrace has a way of teaching feet to dance"},
-  {id:5,title:"Green Light Feeling",writer:"Demo Writer 05",genre:"R&B",mood:"Love",price:"Example: $25",art:"art-5",symbol:"〰",excerpt:"Don't need a reason, just stay for a while\nYour quiet language, your half-hidden smile\nNo perfect timing, no grand design\nJust your hand finding its way into mine",full:"Don't need a reason, just stay for a while\nYour quiet language, your half-hidden smile\nNo perfect timing, no grand design\nJust your hand finding its way into mine"},
-  {id:6,title:"One More Summer",writer:"Demo Writer 06",genre:"Indie",mood:"Party",price:"Example: $18",art:"art-6",symbol:"☼",excerpt:"Barefoot roads and a radio song\nWe swore that the night could keep going on\nIf youth is a place, let me stay awhile\nWith salt in my hair and a sunburned smile",full:"Barefoot roads and a radio song\nWe swore that the night could keep going on\nIf youth is a place, let me stay awhile\nWith salt in my hair and a sunburned smile"}
-];
-
-const grid = document.getElementById("listingGrid");
-const emptyState = document.getElementById("emptyState");
-const searchInput = document.getElementById("searchInput");
-const genreFilter = document.getElementById("genreFilter");
-const moodFilter = document.getElementById("moodFilter");
-const dialog = document.getElementById("listingDialog");
-
-function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, character => ({
-    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
-  }[character]));
-}
-
-function renderListings() {
-  const search = searchInput.value.trim().toLowerCase();
-  const genre = genreFilter.value;
-  const mood = moodFilter.value;
-  const filtered = listings.filter(item => {
+const filtered = listings.filter(item => {
     const searchable = `${item.title} ${item.writer} ${item.genre} ${item.mood} ${item.excerpt}`.toLowerCase();
     return searchable.includes(search) &&
       (genre === "all" || item.genre === genre) &&
@@ -53,7 +24,7 @@ function openListing(id) {
   document.getElementById("dialogLyrics").textContent = item.full;
   document.getElementById("dialogPrice").textContent = item.price;
   const contact = document.getElementById("dialogContact");
-  contact.href = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent("LyricMarket enquiry: " + item.title)}&body=${encodeURIComponent("Hello, I am interested in the demo listing: " + item.title + ". Please confirm the approved listing details and rights terms.")}`;
+  contact.href = `mailto:${encodeURIComponent(ayomidefaruq079@gmail.com)}?subject=${encodeURIComponent("LyricMarket enquiry: " + item.title)}&body=${encodeURIComponent("Hello, I am interested in the demo listing: " + item.title + ". Please confirm the approved listing details and rights terms.")}`;
   dialog.showModal();
 }
 grid.addEventListener("click", event => {
@@ -101,4 +72,5 @@ document.getElementById("submissionForm").addEventListener("submit", event => {
 });
 document.getElementById("year").textContent = new Date().getFullYear(
 loadLiveListings();
-                            
+
+                       
