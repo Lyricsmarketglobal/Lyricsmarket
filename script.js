@@ -29,7 +29,7 @@ contact.href = `mailto:${encodeURIComponent("ayomidefaruq079@gmail.com")}?subjec
 }
 grid.addEventListener("click", event => {
   const button = event.target.closest("[data-listing-id]");
-  if (button) openListing(Number(button.dataset.listingId));
+  if (button) openListing(button.dataset.listingId);
 });
 document.getElementById("dialogClose").addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
