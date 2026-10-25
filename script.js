@@ -98,5 +98,6 @@ document.getElementById("submissionForm").addEventListener("submit", event => {
   URL.revokeObjectURL(url);
   document.getElementById("formStatus").textContent = "Submission file created. It has NOT been sent. Save the file and email it to the site owner for review.";
 });
-document.getElementById("year").textContent = new Date().getFullYear();
-renderListings();
+document.getElementById("year").textContent = new Date().getFullYear(
+loadLiveListings();
+                            
