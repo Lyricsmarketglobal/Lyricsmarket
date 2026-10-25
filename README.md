@@ -9,7 +9,7 @@
 This is a static front-end prototype. It does not have a database, user accounts, a moderation dashboard, server-side storage, checkout, escrow, automated payouts, or email delivery. The sample listings are fictional demonstrations and must not be presented as real offers. The submission form creates a `.txt` file on the visitor's device; it does not send or store submissions.
 
 ## Before public launch
-1. In `script.js`, replace `REPLACE-WITH-YOUR-EMAIL@example.com` with a real contact email you control.
+1. In `script.js`, replace `ayomidefaruq079@gmail.com` with a real contact email you control.
 2. In `index.html`, replace the `mailto:REPLACE-WITH-YOUR-EMAIL@example.com` links with the same email.
 3. Replace fictional demo listings with original lyrics whose writers have given permission for publication.
 4. Add real terms, privacy information, copyright/reporting procedures, and clear licence terms.
