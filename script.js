@@ -24,7 +24,7 @@ function openListing(id) {
   document.getElementById("dialogLyrics").textContent = item.full;
   document.getElementById("dialogPrice").textContent = item.price;
   const contact = document.getElementById("dialogContact");
-  contact.href = `mailto:${encodeURIComponent(ayomidefaruq079@gmail.com)}?subject=${encodeURIComponent("LyricMarket enquiry: " + item.title)}&body=${encodeURIComponent("Hello, I am interested in the demo listing: " + item.title + ". Please confirm the approved listing details and rights terms.")}`;
+contact.href = `mailto:${encodeURIComponent("ayomidefaruq079@gmail.com")}?subject=${encodeURIComponent("LyricMarket enquiry: " + item.title)}&body=${encodeURIComponent("Hello, I am interested in the demo listing: " + item.title + ". Please confirm the approved listing details and rights terms.")}`;
   dialog.showModal();
 }
 grid.addEventListener("click", event => {
@@ -70,7 +70,7 @@ document.getElementById("submissionForm").addEventListener("submit", event => {
   URL.revokeObjectURL(url);
   document.getElementById("formStatus").textContent = "Submission file created. It has NOT been sent. Save the file and email it to the site owner for review.";
 });
-document.getElementById("year").textContent = new Date().getFullYear(
-loadLiveListings();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
                        
