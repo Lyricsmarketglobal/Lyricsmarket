@@ -1,4 +1,4 @@
-const CONTACT_EMAIL = "REPLACE-WITH-YOUR-EMAIL@example.com"; // Replace before launch.
+const CONTACT_EMAIL = "ayomidefaruq079@gmail.com"; // Replace before launch.
 
 const listings = [
   {id:1,title:"Moonlight on My Side",writer:"Demo Writer 01",genre:"Afrobeats",mood:"Love",price:"Example: $20",art:"art-1",symbol:"☾",excerpt:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you",full:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you"},
