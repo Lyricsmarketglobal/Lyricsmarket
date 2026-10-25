@@ -1,6 +1,7 @@
 const CONTACT_EMAIL = "ayomidefaruq079@gmail.com"; // Replace before launch.
-
-const listings = [
+const SUPABASE_URL = "https://baopkvxpeulkenbzgwyo.supabase.co";
+const SUPABASE_KEY = "sb_publishable_MXQsjL9fjXPobEdhFsl0FQ_DyOISV_X";
+let listings = [
   {id:1,title:"Moonlight on My Side",writer:"Demo Writer 01",genre:"Afrobeats",mood:"Love",price:"Example: $20",art:"art-1",symbol:"☾",excerpt:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you",full:"When the city goes quiet, your name still sings\nTwo shadows dancing where the midnight begins\nIf tomorrow loses its way in the blue\nI would find every road that leads me to you"},
   {id:2,title:"Paper Hearts",writer:"Demo Writer 02",genre:"Pop",mood:"Heartbreak",price:"Example: negotiable",art:"art-2",symbol:"♡",excerpt:"We made forever out of paper and rain\nWatched every promise turn soft in the frame\nI kept the letters, you kept the truth\nFunny how goodbye still sounds like you",full:"We made forever out of paper and rain\nWatched every promise turn soft in the frame\nI kept the letters, you kept the truth\nFunny how goodbye still sounds like you"},
   {id:3,title:"No Small Dreams",writer:"Demo Writer 03",genre:"Rap",mood:"Confidence",price:"Example: $35",art:"art-3",symbol:"↗",excerpt:"Came with a plan and a pocket of hope\nBuilt me a ladder from every closed door\nIf they draw a line, I make it a road\nI know what I'm worth, I know what I'm owed",full:"Came with a plan and a pocket of hope\nBuilt me a ladder from every closed door\nIf they draw a line, I make it a road\nI know what I'm worth, I know what I'm owed"},
