@@ -10,7 +10,7 @@ This is a static front-end prototype. It does not have a database, user accounts
 
 ## Before public launch
 1. In `script.js`, replace `ayomidefaruq079@gmail.com` with a real contact email you control.
-2. In `index.html`, replace the `mailto:REPLACE-WITH-YOUR-EMAIL@example.com` links with the same email.
+2. In `index.html`, replace the `mailto:ayomidefaruq079@gmail.com` links with the same email.
 3. Replace fictional demo listings with original lyrics whose writers have given permission for publication.
 4. Add real terms, privacy information, copyright/reporting procedures, and clear licence terms.
 5. Test on an Android phone and ask a few people to test search, filters, listing details, and the submission download.
